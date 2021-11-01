@@ -7,22 +7,35 @@ export type countryName = {
 }
 export type countryCapital = string[]
 export  type countryFlag = {
-    flags:string,
+    
+    png:string,
     svg:string
 }
-export  type countryLang = {}
+
+interface LooseObject {
+    [key: string]: any
+}
+
 export  type countryRegion = string
 export  type countryPopulation = number
 
 export type countryStateType = {
     name:countryName,
     capital:countryCapital,
-    flag:countryFlag,
-    lang:countryLang,
+    flags:countryFlag,
+    lang:LooseObject|any,
     region:countryRegion,
     population:countryPopulation
 }
 
+// export type countryStateType = {
+//     name:string,
+//     capital:string,
+//     flag:string,
+//     lang:string,
+//     region:string,
+//     population:number
+// }
 export type countriesStateType = {
     countries:countryStateType[],
     isLoading:boolean,

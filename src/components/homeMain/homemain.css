@@ -1,0 +1,21 @@
+.homeMain{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.homeMain .homeMain_title {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.homeMain .homeMain-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.homeMain-info_flag img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
